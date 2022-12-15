@@ -1,7 +1,19 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 export default function Home() {
-    return <h1 className="text-3xl font-bold">Nice!</h1>;
+    return (
+        <div className=" h-screen bg-zinc-800 text-white">
+            <Head>
+                <title>Felipe's Portfolio</title>
+                <meta name="description" content="Felipe's Portfolio" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <Header />
+            <section id="hero">
+                <Hero />
+            </section>
+        </div>
+    );
 }
